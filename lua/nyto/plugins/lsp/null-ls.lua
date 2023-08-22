@@ -35,7 +35,6 @@ null_ls.setup({
 				"markdown.mdx",
 				"graphql",
 				"handlebars",
-				"prisma",
 			},
 		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter

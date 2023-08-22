@@ -6,6 +6,12 @@ local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>")
 
+-- Moving in insert mode
+keymap.set("i", "<C-k>", "<Up>")
+keymap.set("i", "<C-j>", "<Down>")
+keymap.set("i", "<C-h>", "<Left>")
+keymap.set("i", "<C-l>", "<Right>")
+
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "x", '"_x')
@@ -44,4 +50,3 @@ keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git 
 keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
-
